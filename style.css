@@ -64,7 +64,8 @@ button:hover {
     filter: brightness(1.2);
 }
 
-.operator {
+/* Sinais verdes alinhados na direita */
+.operator, .btn-equal {
     background-color: #009739 !important;
     border-color: #FFDF00 !important;
 }
@@ -72,12 +73,6 @@ button:hover {
 .btn-clear { background-color: #ff4d4d; border-color: #fff; }
 
 .btn-del { background-color: #012169; border-color: #FFDF00; }
-
-.btn-equal {
-    background-color: #009739 !important;
-    border-color: #FFDF00 !important;
-    border-radius: 35px;
-}
 
 .col-2 {
     grid-column: span 2;
