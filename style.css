@@ -16,14 +16,6 @@ body {
     box-shadow: 0 15px 35px rgba(0,0,0,0.6);
 }
 
-.header {
-    color: #FFDF00;
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-}
-
 #display {
     width: 100%;
     height: 70px;
@@ -45,6 +37,7 @@ body {
 }
 
 button {
+    width: 70px; /* Largura fixa para manter circular */
     height: 70px;
     border-radius: 50%;
     border: 2px solid #FFDF00;
@@ -54,28 +47,28 @@ button {
     font-weight: bold;
     cursor: pointer;
     transition: 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
+/* Efeito de hover corrigido (sem mudar o formato) */
 button:hover {
     transform: scale(1.05);
     filter: brightness(1.2);
 }
 
-/* Sinais verdes alinhados na direita */
+/* CORES DOS BOTÕES */
+.btn-clear { 
+    background-color: #ff4d4d !important; /* Vermelho vibrante */
+    border-color: #fff !important; 
+}
+
 .operator, .btn-equal {
-    background-color: #009739 !important;
+    background-color: #009739 !important; /* Verde bandeira */
     border-color: #FFDF00 !important;
 }
 
-.btn-clear { background-color: #ff4d4d; border-color: #fff; }
-
-.btn-del { background-color: #012169; border-color: #FFDF00; }
-
+/* Ajuste específico para o Zero */
 .col-2 {
     grid-column: span 2;
-    border-radius: 35px !important;
-    width: 152px !important;
+    width: 152px; /* 70 + 70 + 12 de gap */
+    border-radius: 35px;
 }
