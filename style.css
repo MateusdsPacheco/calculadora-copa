@@ -72,6 +72,13 @@ button:hover {
 }
 
 /* Botões especiais */
-.btn-clear { background-color: #ff4d4d; border-color: #fff; border-radius: 35px; }
-.btn-equal { background-color: #009739; border-radius: 35px; }
-.col-2 { grid-column: span 2; border-radius: 35px; }
+.btn-clear { background-color: #ff4d4d; border-color: #fff; }
+.btn-del { background-color: #012169; border-color: #FFDF00; }
+.btn-equal { background-color: #009739; border-radius: 50%; width: 70px; }
+
+/* Ajuste para o Zero e o layout de 4 colunas */
+.col-2 { 
+    grid-column: span 2; 
+    border-radius: 35px !important; 
+    width: 152px !important; 
+}
