@@ -73,15 +73,25 @@ button:hover {
 
 /* Botões especiais */
 /* Botões especiais e ajustes de alinhamento */
-/* APAGUE DO .btn-clear ATÉ O FINAL E COLE ISSO: */
+.btn-clear { 
+    background-color: #ff4d4d; 
+    border-color: #fff; 
+}
 
-.btn-clear { background-color: #ff4d4d; border-color: #fff; }
-.btn-del { background-color: #012169; border-color: #FFDF00; }
+.btn-del { 
+    background-color: #012169; 
+    border-color: #FFDF00; 
+}
 
 /* Garante que o ponto e o igual sejam círculos de 70px */
 .btn-dot, .btn-equal { 
     width: 70px !important; 
     border-radius: 50% !important; 
+}
+
+.btn-equal {
+    background-color: #009739 !important;
+    border-color: #FFDF00 !important;
 }
 
 /* O Zero ocupa 2 espaços na esquerda */
