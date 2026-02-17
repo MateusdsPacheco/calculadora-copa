@@ -73,17 +73,18 @@ button:hover {
 
 /* Botões especiais */
 /* Botões especiais e ajustes de alinhamento */
-.btn-clear { background-color: #ff4d4d; border-color: #fff; border-radius: 50%; }
-.btn-del { background-color: #012169; border-color: #FFDF00; border-radius: 50%; }
+/* APAGUE DO .btn-clear ATÉ O FINAL E COLE ISSO: */
 
-/* O botão de igual agora é um círculo verde perfeito como os operadores */
-.btn-equal { 
-    background-color: #009739; 
-    border-radius: 50% !important; 
+.btn-clear { background-color: #ff4d4d; border-color: #fff; }
+.btn-del { background-color: #012169; border-color: #FFDF00; }
+
+/* Garante que o ponto e o igual sejam círculos de 70px */
+.btn-dot, .btn-equal { 
     width: 70px !important; 
+    border-radius: 50% !important; 
 }
 
-/* O Zero ocupa 2 espaços para alinhar a última fileira */
+/* O Zero ocupa 2 espaços na esquerda */
 .col-2 { 
     grid-column: span 2; 
     border-radius: 35px !important; 
