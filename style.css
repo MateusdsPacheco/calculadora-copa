@@ -48,7 +48,7 @@ button {
     height: 70px;
     border-radius: 50%; /* Faz o botão circular */
     border: 2px solid #FFDF00; /* Borda amarela nos números */
-    background-color: #012169; /* Azul dos números da sua foto */
+    background-color: #012169; /* Azul dos números */
     color: white;
     font-size: 1.5rem;
     font-weight: bold;
@@ -59,30 +59,33 @@ button {
     justify-content: center;
 }
 
-/* Efeito de hover e clique */
+/* Efeito de hover corrigido */
 button:hover { 
-    .operator { 
-    background-color: #009739 !important; 
-    border-color: #FFDF00 !important; 
+    transform: scale(1.05); 
+    filter: brightness(1.2); 
 }
 
+/* FILEIRA VERTICAL VERDE (Lado Direito) */
+.operator, .btn-equal {
+    background-color: #009739 !important;
+    border-color: #FFDF00 !important;
+    width: 70px !important;
+    border-radius: 50% !important;
+}
+
+/* BOTÕES DE CONTROLE */
 .btn-clear { background-color: #ff4d4d; border-color: #fff; }
 .btn-del { background-color: #012169; border-color: #FFDF00; }
 
-.btn-dot, .btn-equal { 
-    width: 70px !important; 
-    border-radius: 50% !important; 
+/* AJUSTES DE ALINHAMENTO */
+.btn-dot {
+    width: 70px !important;
+    border-radius: 50% !important;
 }
 
-.btn-equal {
-    background-color: #009739 !important;
-    border-color: #FFDF00 !important;
-}
-
-.col-2 { 
-    grid-column: span 2; 
-    border-radius: 35px !important; 
-    width: 152px !important; 
-} 
-    width: 152px !important; 
+/* O Zero ocupa 2 espaços na base */
+.col-2 {
+    grid-column: span 2;
+    border-radius: 35px !important;
+    width: 152px !important;
 }
